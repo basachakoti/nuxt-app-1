@@ -1,7 +1,7 @@
 <template>
   <div class="h3">
-    <h1>{{ message.message }}</h1>
-    <h3>Happy Birthday Mayya</h3>
+    <!-- <h1>{{ message.message }}</h1> -->
+    <h3>Om Sri Sai Ram</h3>
   </div>
 </template>
 
