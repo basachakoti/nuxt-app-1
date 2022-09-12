@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'attempt-1',
+    title: 'Sri Sadguru Sai Shankar',
     htmlAttrs: {
       lang: 'en'
     },
