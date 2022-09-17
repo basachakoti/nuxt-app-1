@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid p-0 m-0">
-    <Header />
+    <!-- <Header /> -->
     <Nuxt />
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
