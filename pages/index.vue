@@ -1,31 +1,10 @@
 <template>
-  <div class="h3" style="background: rgb(255, 218, 107); padding: 8px">
-    <div class="head text-center">
-      <img
-        src="~/assets/images/sadgurusaishankar.jpg"
-        alt="sadguru sai shankar picture"
-      />
-      <h3>{{ message }}</h3>
-      <v-card class="bg-transparent shadow-none">
-        <v-container>
-          <v-row dense>
-            <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-              <NuxtLink :to="card.link">
-                <v-card>
-                  <v-img
-                    :src="card.src"
-                    class="white--text align-end"
-                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                    height="200px"
-                  >
-                  </v-img>
-                  <v-card-title v-text="card.title"></v-card-title>
-                </v-card>
-              </NuxtLink>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-card>
+  <div class="p-2">
+    <div class="card p-2 sadguru-photo" style="width: 18rem">
+      <img src="~/assets/images/sai.jpg" alt="sadguru sai shankar picture" />
+      <p class="m-0 sai-message">Sri Sadguru Sai Shankar</p>
+      <div class="card-title font-weight-bold h5">Message</div>
+      <h6>{{ message }}</h6>
     </div>
   </div>
 </template>
@@ -34,27 +13,7 @@
 export default {
   data() {
     return {
-      message: "Om Sri Sai Ram",
-      cards: [
-        {
-          title: "Sai Leela - Stories",
-          src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-          flex: 3,
-          link: "/stories",
-        },
-        {
-          title: "Sai Vaani - Quotations",
-          src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-          flex: 3,
-          link: "/quotes",
-        },
-        {
-          title: "Sai Bhajans",
-          src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-          flex: 3,
-          link: "/bhajans",
-        },
-      ],
+      message: "Be happy, Make others happy, All will be happy, God will be happy",
     };
   },
   // async fetch() {
@@ -65,15 +24,16 @@ export default {
 };
 </script>
 <style>
-/* .head { */
-/* background: transparent; */
-/* } */
-.head {
-  /* width: 100%; */
-  /* height: 56.25%; */
-  aspect-ratio: 3/2;
-  background-image: url("~assets/images/pattern.png");
-  background-color: #7e8446;
-  background-repeat: repeat;
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+
+.sai-message {
+  font-family: "Ms Madi", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sadguru-photo {
+  background: #f1f1f1 !important;
 }
 </style>
