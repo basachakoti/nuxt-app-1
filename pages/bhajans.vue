@@ -1,16 +1,6 @@
 <template>
   <v-card>
     <v-toolbar color="purple" dark flat prominent>
-      <v-text-field
-        append-icon="mdi-microphone"
-        class="mx-4"
-        flat
-        hide-details
-        label="Search"
-        prepend-inner-icon="mdi-magnify"
-        solo-inverted
-      ></v-text-field>
-
       <template v-slot:extension>
         <v-tabs v-model="tabs" centered>
           <v-tab v-for="n in languages" :key="n"> {{ n }} </v-tab>
